@@ -11,7 +11,7 @@ R_v = 461.
 e_sat0 = 611.
 T_0 = 273.16
 σ = 5.67e-8
-planet = Thermodynamics.planet(
+planet = Thermodynamics.Planet(
 	c_p,
 	g,
 	L_v,
