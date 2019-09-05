@@ -1,5 +1,8 @@
 module Thermodynamics
 
+import Roots 
+using Printf
+
 struct Planet
 	c_p
 	g
@@ -14,7 +17,7 @@ end
 function e_sat(planet::Planet, T)
 	return 	(
 				planet.e_sat0 *
-				exp(-planet.Lv / planet.Rv * (1.0/T - 1.0/planet.T_0))
+				exp(-planet.L_v / planet.R_v * (1.0/T - 1.0/planet.T_0))
 			)
 end
 
