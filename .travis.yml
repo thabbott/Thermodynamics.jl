@@ -1,3 +1,5 @@
+codecov: true
+CODECOV_TOKEN="53be2d39-8c41-4368-b38f-3834e8b425e3"
 language: julia
 version:
   1.2
