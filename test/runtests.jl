@@ -4,6 +4,7 @@ using Printf
 
 tests = [
 	"test_Planet.jl",
+	"test_InversionError.jl",
 	"test_e_sat.jl",
 	"test_q_sat.jl",
 	"test_mse.jl",

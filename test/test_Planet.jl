@@ -19,4 +19,4 @@ planet = Thermodynamics.Planet(
 	T_0,
 	σ
 )
-return true
+@test true
