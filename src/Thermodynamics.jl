@@ -6,6 +6,7 @@ using Printf
 struct Planet
 	c_pa
 	c_pl
+	ρ_l
 	g
 	L_v
 	R_a
@@ -22,6 +23,31 @@ end
 Base.showerror(io::IO, e::InversionError) = (
 	print(io, "InversionError: ", e.var)
 )
+
+function earth()
+	c_pa = 1004.
+	c_pl = 4186.
+	ρ_l = 1e3
+	g = 9.81
+	L_v = 2.5104e6
+	R_a = 287.
+	R_v = 461.
+	e_sat0 = 611.
+	T_0 = 273.16
+	σ = 5.67e-8
+	return Planet(
+		c_pa,
+		c_pl,
+		ρ_l,
+		g,
+		L_v,
+		R_a,
+		R_v,
+		e_sat0,
+		T_0,
+		σ
+	)
+end
 
 function e_sat(planet::Planet, T)
 	return 	(
