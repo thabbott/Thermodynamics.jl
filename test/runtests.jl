@@ -7,6 +7,7 @@ tests = [
 	"test_InversionError.jl",
 	"test_e_sat.jl",
 	"test_q_sat.jl",
+	"test_approximate_p_LCL.jl",
 	"test_mse.jl",
 	"test_invert_mse.jl",
 	"test_gamma.jl"

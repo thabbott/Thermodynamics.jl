@@ -60,6 +60,15 @@ function q_sat(planet::Planet, T, p)
 	return planet.R_a / planet.R_v * (e_sat(planet, T) / p)
 end
 
+function approximate_p_LCL(planet::Planet, p_s, RH_s)
+	return p_s * RH_s ^ (
+		1.0 / (
+			(planet.L_v * planet.R_a) /
+			(planet.R_v * planet.c_pa * planet.T_0) - 1.0
+		)
+	)
+end
+
 function mse(planet::Planet, T, z, q)
 	return planet.c_pa * T + planet.g * z + planet.L_v * q
 end
