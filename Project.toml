@@ -4,7 +4,6 @@ author = "Tristan Abbott <thabbott@mit.edu>"
 version = "0.0.0"
 
 [deps]
-IJulia = "7073ff75-c697-5162-941a-fcdaad2a7d2a"
 Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
 Roots = "f2b01f46-fcfa-551c-844a-d8ac1e96c665"
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
